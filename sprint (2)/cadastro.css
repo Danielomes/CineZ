@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn:focus,
+.btn:active,
+.form-control:focus,
+.form-control:active,
+.form-select:focus,
+.form-select:active,
+.form-check-input:focus,
+.form-check-input:active {
+    box-shadow: none !important;
+}
+
+body {
+    background-image: url(img/Summer_Film_Preview_71939.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main {
+    background-color: rgba(27, 8, 20, 0.81);
+    background-blend-mode: multiply;
+    backdrop-filter: blur(2px);
+    height: 115vh;
+}
+
+.h3 {
+    color: white;
+}
+
+.container {
+    background: rgb(27, 8, 20);
+    background: linear-gradient(rgba(27, 8, 20, 1) 0%, rgb(22, 7, 32) 100%);
+    -webkit-box-shadow: 0px 0px 18px 2px rgba(18, 0, 18, 1);
+    -moz-box-shadow: 0px 0px 18px 2px rgba(18, 0, 18, 1);
+    box-shadow: 0px 0px 18px 2px rgba(18, 0, 18, 1);
+    height: 100% !important;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white !important;
+}
+
+.input-group-text{
+    background-color: #892de02c !important;
+    border-color: #8a2de0 !important;
+    color: #8a2de0 !important; 
+}
+
+.btn-outline-secondary:hover{
+    background-color: #8a2de0 !important;
+    border-color: #8a2de0 !important;
+    color: white !important;
+}
+
+#emailHelp {
+    color: rgb(175, 175, 175);
+}
+
+.inputFormulario,
+.inputFormulario:focus {
+    background-color: #892de015 !important;
+    color: #8a2de0 !important;
+    border-color: #8a2de0 !important;
+}
+
+.inputFormulario::placeholder {
+    color: #8a2de0 !important;
+}
+
+
+.form-check-input:enabled,
+.btn-outline-secondary,
+.form-check-input {
+    color: #8a2de0 !important;
+    background-color: transparent !important;
+    border-color: #8a2de0 !important;
+}
+
+.btn-outline-light,
+.btn-outline-light:hover,
+.btn-check,
+.btn-check:hover {
+    color: #8a2de0 !important;
+    background-color: transparent !important;
+    border-color: #8a2de0 !important;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: #ffffff !important;
+    background-color: #8a2de0 !important;
+    border-color: #8a2de0 !important;
+}
+
+.text-center {
+    color: white;
+}
+
+label {
+    color: white !important;
+}
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+
+        .main{
+            height: auto;
+        }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinEZ - Cadastro</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/logo200px.png" type="image/x-icon">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+    <div class="main d-flex align-items-center">
+        <div class="container d-flex col-lg-5 align-items-center py-3 px-4">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center justify-content-center mt-2">
+                    <img src="img/logo200px.png" alt="Logo CINEZ" height="100px">
+                </div>
+                <form>
+                    <h1 class="mb-3 mt-3 h3">Faça seu cadastro e comece a assistir!</h1>
+                    <div class="mb-3">
+                        <div class="input-group mb-4">
+                            <input type="text" class="inputFormulario form-control" placeholder="Nome" aria-label="Nome">
+
+                            <input type="text" class="inputFormulario form-control" placeholder="Sobrenome" aria-label="Sobrenome">
+                          </div>
+                        <input type="email" class="inputFormulario form-control" id="email" placeholder="E-mail"
+                            required>
+                        <div id="emailHelp" class="form-text">
+                            Não será visível publicamente
+                        </div>
+                    </div>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock"></i></span>
+                        <input type="password" class="inputFormulario form-control" placeholder="Senha"
+                            aria-label="senha" aria-describedby="senha" required>
+                    </div>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock-fill"></i></span>
+                        <input type="password" class="inputFormulario form-control" placeholder="Confirme a senha"
+                            aria-label="confirmacaoSenha" aria-describedby="confirmacaoSenha" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="data">Data de nascimento:</label>
+                        <input type="date" name="data" id="data" class="inputFormulario form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="idioma" class="form-label">Idioma:</label>
+                        <select name="idioma" id="idioma" class="inputFormulario form-select">
+                            <option value="1">English</option>
+                            <option value="2">普通话</option>
+                            <option value="3">Español</option>
+                            <option value="4">Français</option>
+                            <option value="5">العربية</option>
+                            <option value="6">हिन्दी</option>
+                            <option value="7">Русский</option>
+                            <option value="8" selected>Português</option>
+                            <option value="9">বাংলা</option>
+                            <option value="10">日本語</option>
+                        </select>
+                    </div>
+                    <label for="gender">Gênero (opcional):</label>
+                    <div class="mt-2 mb-3 d-flex align-items-center justify-content-center" id="gender">
+                        <div class="col-6 d-flex align-items-center justify-content-center">
+                            <input type="radio" class="btn-check col-6" name="genero" id="feminino" autocomplete="off">
+                            <label class="btn btn-outline-light ps-5 pe-5" for="feminino"><i
+                                    class="fa-solid fa-person-dress"></i></label>
+                        </div>
+                        <div class="col-6 d-flex align-items-center justify-content-center">
+                            <input type="radio" class="btn-check" name="genero" id="masculino" autocomplete="off">
+                            <label class="btn btn-outline-light ps-5 pe-5" for="masculino"><i
+                                    class="fa-solid fa-person"></i></label>
+                        </div>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center justify-content-center">
+                        <input type="checkbox" id="termos" class="form-check-input" required>
+                        <label for="termos" class="form-check-label ms-1 mt-1">Li e aceito os <a href="#">Termos de
+                                Uso</a>
+                            e <a href="#">Política de Privacidade</a></label>
+                    </div>
+                    <p class="text-center mb-4">
+                        Já tem uma conta? <a href="login.html" id="entrar"><u>Entrar</u></a>
+                    </p>
+                
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <a href="login.html " class="btn btn-outline-secondary" type="submit">Cadastrar-se</a>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

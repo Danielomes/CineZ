@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* cor de fundo e do texto */
+body {
+  background-color: rgb(22, 7, 32) ;
+  color: #FFF;
+}
+/* cores do background */
+.primary-bg-color {
+  background-color: rgb(22, 7, 32) ;
+}
+.secondary-bg-color {
+  background-color: rgb(32, 0, 53) ;
+}
+.light-bg-color {
+  background-color: #9E45EF
+}
+.dark-bg-color {
+  background-color: #101010;
+}
+/* cores das fontes, links */
+.primary-color {
+  color: #9E45EF;
+}
+.secondary-color {
+  color: #9E45EF;
+}
+.light-color {
+  color: #9E45EF
+}
+
+/* estilizando a navbar */
+#navbar .navbar-nav {
+  flex-direction: row;
+  /* move os itens para a direita */
+  justify-content: flex-end;
+}
+/* itens da navbar */
+#navbar .navbar-nav li {
+  margin-left: 1em;
+}
+/* links e botão */
+#navbar a,
+#navbar button {
+  color: #FFF;
+}
+/* posição relativa para poder usar o 'span' */
+#navbar li {
+  position: relative;
+}
+
+#search{
+  background-color: #892de02c !important;
+  border-color: #8a2de0 !important;
+  color: #8a2de0 !important; 
+}
+
+#search::placeholder{
+  color: #9E45EF;
+}
+
+#search:focus{
+  box-shadow: none !important;
+}
+
+
+#navbar i {
+  font-size: 20px;
+}
+/* icone que mostra a quantidade */
+#navbar span {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #EF3636;
+  text-align: center;
+}
+/* espaçmento para o 'span' não ficar em cima do preço */
+#cart-item span {
+  left: 20px;
+}
+/* mobile */
+.navbar-brand {
+  font-weight: 300;
+  width: 100%;
+  text-align: center;
+}
+/* mobile */
+#navbar-items {
+  justify-content: space-between;
+}
+/* mobile */
+#search-form,
+#news-form {
+  width: 100%;
+  margin: 2em 0;
+}
+
+/* para desktop */
+@media(min-width: 768px) {
+  .navbar-brand {
+    text-align: left;
+  }
+  #navbar-items {
+    display: flex;
+    min-width: 80%;
+  }
+  #search-form,
+  #news-form {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+
+/* Segunda navbar */
+#bottom-navbar-container .container {
+  justify-content: flex-end;
+}
+
+#bottom-navbar-container a {
+  color: #FFF;
+  font-weight: 300;  
+}
+
+.navbar-toggler {
+  font-size: 1.5em;
+}
+
+/* BANNERS */
+#banners-container {
+  padding: 0;
+}
+
+.carousel-caption {
+  bottom: 5em;
+  padding: 1em;
+  left: 12%;
+  right: 12%;
+}
+
+.carousel-caption h5 {
+  font-size: 1.8em;
+}
+
+@media(min-width: 768px) {
+  #slider .carousel-item,
+  #slider img {
+    height: 600px;
+  }
+
+  .carousel-caption {
+    left: 23%;
+    right: 23%;
+  }
+
+  .carousel-caption h5 {
+    font-size: 4em;
+  }
+}
+
+
+/* cores do background */
+.secondary-bg-color{
+  background-color: #9E45EF;  
+}
+
+.light-bg-color{
+  background-color: #542580;
+}
+.dark-bg-color{
+  background-color: #101010;
+}
+
+
+
+#banners-container{
+  padding: 20px;
+  
+}
+
+.carousel-caption{
+  bottom: 5em;
+  padding: 1em;
+  left: 12%;
+  right: 12%;
+
+}
+
+.carousel-caption h5{
+  font-size: 1.8em;
+}
+
+@media (min-width:768px ) {
+#slider.carousel-item,
+#slider img {
+  height: 600px;
+}  
+
+.carousel-caption{
+  left: 23%;
+  right: 23%;
+}
+
+.carousel-caption h5 {
+  font-size: 4em;
+}
+}
+
+
+/* MINI BANNERS */
+#mini-banners {
+  /* margin-top: -3em;  */
+  z-index: 10;
+  padding: 30px;
+}
+/* Estilos para as colunas da seção de mini-banners */
+#mini-banners .col-12 {
+  z-index: 1;
+  height: 300px;
+  padding: 1.5em;
+  /* Espaçamento interno */
+  position: relative;
+  /* Posicionamento relativo para conter os elementos internos */
+  display: flex;
+  /* Usa flexbox para organizar elementos internos */
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+@media(min-width: 768px) {
+  #mini-banners .col-12 {
+    max-width: 30%;
+  }
+}
+/* Estilos para os títulos h2 dentro das colunas */
+#mini-banners .col-12 h2 {
+  text-transform: uppercase;
+  max-width: 50px;
+  font-size: 2.2em;
+  font-weight: 700;
+  line-height: 1em;
+}
+/* Estilos para as imagens dentro das colunas */
+#mini-banners .col-12 img {
+  height: 220px;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+/* Estilos para os links dentro das colunas */
+#mini-banners .col-12 a {
+  font-weight: bold;
+  color: #FFF;
+  font-size: .8rem;
+  transition: .5s;
+  text-decoration: none;
+}
+
+#mini-banners .col-12 a:hover {
+  color: #101010;
+}
+/* Estilos específicos para o hover do primeiro mini-banner */
+#mini-banners #mini-banner-1 a:hover {
+  color: #101010;
+}
+
+#mini-banners #mini-banner-3 a {
+  color: #FFF;
+}
+#mini-banners #mini-banner-3 a:hover {
+  color: #101010;
+}
+
+#mini-banner-1:hover{
+  transform: scale(1.1);
+}
+
+
+#mini-banner-2:hover{
+  transform: scale(1.1);
+}
+
+
+#mini-banner-3:hover{
+  transform: scale(1.1);
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 2.2em;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+
+/* BEST SELLERS - Mais vendidos */
+#best-sellers {
+  /* espaçamento em superios e inferior da sessão */
+  padding: 4em;
+}
+
+#best-sellers .row {
+  margin: 0;
+}
+
+#best-sellers .col-md-3 {
+  padding: 0;
+}
+
+/* Estilos para elementos com a classe .title */
+.title {
+  text-transform: uppercase; /* Transformação de texto em maiúsculas */
+  font-weight: 900; /* Peso da fonte (negrito) */
+  font-size: 2.5em; /* Tamanho da fonte */
+  margin-bottom: 1em; /* Espaço inferior */
+  text-align: center; /* Alinhamento central do texto */
+}
+
+/* Estilos para elementos .title em telas com largura mínima de 768px */
+@media(min-width: 768px) {
+  .title {
+    text-align: left; /* Alinhamento à esquerda do texto */
+  }
+}
+
+/* Estilos para elementos com a classe .card */
+.card2 {
+  text-align: center; /* Alinhamento central do texto */
+  border-radius: 0; /* Raio do canto do cartão */
+}
+
+/* Estilos para imagens dentro de elementos .card */
+.card img {
+  width: 140px; /* Largura da imagem */
+  margin: 2em auto; /* Margens superior e inferior automáticas e margem lateral 2em */
+}
+
+
+
+
+.btn {
+  background-color: transparent; /* Cor de fundo transparente */
+  border-color: #9E45EF; /* Cor da borda do botão */
+}
+
+/* Estilos para botões .btn quando hover (passando o mouse por cima) */
+.btn:hover {
+  background-color: #bb95de; /* Cor de fundo ao passar o mouse */
+  border-color: #9E45EF; /* Cor da borda ao passar o mouse */
+}
+
+#news-form input:focus {
+  box-shadow: none;
+}
+
+#news-form input {
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+}
+
+#news-form input::placeholder {
+  color: #FFF;
+}
+
+
+.light-color {
+  color: #9E45EF;
+}
+  body{
+    background-color: black;
+  }
+
+#bottom-banner {
+    background-color: #101010; 
+    padding: 6em;
+    margin-bottom: 4em;
+    text-align: center;
+  }
+  
+  #bottom-banner .offer-subtitle,
+  #bottom-banner h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  #bottom-banner .btn {
+    margin: 2em;
+    font-weight: bold;
+    padding: 1em;
+  }
+  
+  #bottom-banner img {
+    max-width: 300px;
+  }
+  .imgs{ 
+    height: 400px;
+  }
+  
+  .botao2{
+    background-color: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 3%;
+
+  }
+  .botao2:hover{
+    background-color: purple;
+    box-shadow: 0 0 1em rgb(111, 0, 80);
+  }
+
+  @media(min-width: 768px) {
+    #bottom-banner h2 {
+      font-size: 6em;
+    }
+  }
+
+  .img-filme1, .img-filme4{
+    width:350px;
+    margin-top: 30px;
+  }
+
+  .img-filme2, .img-filme3, .img-filme5, .img-filme6 {
+    margin-top: 20px;
+  }
+
+  .card2 {
+    margin: 10px;
+    background-color: #1f1f1f;
+    border: none;
+    color: #fff;
+    margin-right: 70px;
+}
+.card-img-top-gp1 {
+    height: 400px;
+    object-fit: cover;
+}
+.card-img-top-gp2 {
+    /* height: 105px; */
+    height: 132px;
+    object-fit: cover;
+}
+.card2{
+    border-radius: 20px;
+}
+.card-body2 {
+    padding: 15px;
+}
+.card-title2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card-text2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.card-price {
+    font-size: 18px;
+    color: #03a803;
+}
+.container {
+    padding: 30px 0;
+}
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h5{
+    justify-content: center;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+ /* Mídia máxima de 768px */
+ @media (max-width: 768px) {
+    .card-img-top-gp1 {
+        height: 300px;
+    }
+    .card-img-top-gp2 {
+        height: 100px;
+    }
+    .card-body {
+        padding: 10px;
+    }
+    .card-title {
+        font-size: 18px;
+    }
+    .card-text {
+        font-size: 12px;
+    }
+    .card-price {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* Mídia máxima de 576px (Tela pequena) */
+@media (max-width: 576px) {
+    .card-img-top-gp1 {
+        height: 250px;
+    }
+    .card-img-top-gp2 {
+        height: 100px;
+    }
+    .card-body {
+        padding: 10px;
+    }
+    .card-title {
+        font-size: 18px;
+    }
+    .card-text {
+        font-size: 12px;
+    }
+    .card-price {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* Mídia entre 577px e 992px (Tela média) */
+@media (min-width: 577px) and (max-width: 992px) {
+    .card-img-top-gp1 {
+        height: 300px;
+    }
+    .card-img-top-gp2 {
+        height: 120px;
+    }
+    .card-body {
+        padding: 12px;
+    }
+    .card-title {
+        font-size: 18px;
+    }
+    .card-text {
+        font-size: 14px;
+    }
+    .card-price {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+}
+
+/* Galeria */
+#gallery .image-container {
+  background-size: cover;
+  background-position: center;
+  height: 225px;
+  cursor: pointer;
+  transition: .5s;
+  border: 3px solid #010101;
+}
+
+#gallery .image-container:hover {
+  border-color: #fff8f8;
+  background-color: black;
+}
+
+#insta1 {
+  background-image: url('img/7af25803-e0b4-4eeb-be9d-1f785d709b46_mulher-assistindo-filme-enquanto-come-pipoca.avif');
+}
+
+#insta2 {
+  background-image: url('img/Cupom-Válido-Cinema.jpeg');
+}
+
+#insta3 {
+  background-image: url('img/images.jpg');
+}
+
+#insta4 {
+  background-image: url('img/istockphoto-1317927924-612x612.jpg');
+}
+
+#insta5 {
+  background-image: url('img/lindo-casal-assistindo-filme-no-laptop_23-2147771153.avif');
+}
+
+#insta6 {
+  background-image: url('img/mulher-no-fone-de-ouvido-sentada-na-cama-comendo-pipoca-assistindo-filme-a-noite_259348-7823.avif');
+}
+
+/* Estilos para a SEÇÃO DE RODAPÉ */
+#footer-links-container {
+  background-color: #2f2f2f;
+  border-bottom: 1px solid #141414; /* Borda inferior */
+}
+
+/* Estilos para as colunas do rodapé */
+#footer .footer-column {
+  padding: 2em; /* Preenchimento interno */
+  flex-direction: column; /* Direção de coluna para os elementos flex */
+  align-items: center; /* Centralizar verticalmente */
+  justify-content: center; /* Centralizar horizontalmente */
+  text-align: center; /* Alinhamento de texto central */
+}
+
+/* Estilos para as colunas do rodapé em telas com largura mínima de 768px */
+@media(min-width: 768px) {
+  #footer .footer-column {
+    padding: 5em 2em; /* Preenchimento interno */
+   
+  }
+}
+
+/* Estilos para títulos nas colunas do rodapé */
+#footer-links-container h3 {
+  color: #FFF;
+  margin-bottom: 25px; /* Espaço inferior */
+  text-transform: uppercase; /* Transformação de texto em maiúsculas */
+}
+
+/* Estilos para itens de lista nas colunas do rodapé */
+#footer-links-container li {
+  font-size: 1em; /* Tamanho da fonte */
+  text-align: center; /* Alinhamento de texto central */
+}
+
+/* Estilos para links em itens de lista nas colunas do rodapé */
+#footer-links-container li a {
+  text-decoration: none; /* Remover decoração de link */
+}
+
+/* Estilos para links em itens de lista quando hover (passando o mouse por cima) */
+#footer-links-container li a:hover {
+  color: #9E45EF; /* Cor ao passar o mouse */
+}
+
+/* Estilos para a coluna do centro do rodapé */
+#footer-center {
+  border-left: 2px solid #626262; /* Borda esquerda */
+  border-right: 2px solid #626262; /* Borda direita */
+}
+
+/* Estilos para títulos na coluna do centro do rodapé */
+#footer-center h3 {
+  font-weight: 900; /* Peso da fonte (negrito) */
+}
+
+/* Estilos para o número de telefone na coluna do centro do rodapé */
+#footer-center .store-phone {
+  color: #9E45EF; /* Cor do número de telefone */
+  font-weight: bold; /* Peso da fonte (negrito) */
+  font-size: 2rem; /* Tamanho da fonte */
+  margin-top: -15px; /* Margem superior negativa */
+}
+
+
+/* NEWS */
+#newsletter-container {
+  background-color: #101010;
+  border-bottom: 1px solid #626262;
+  text-align: center;
+  padding: 20px;
+}
+#news-form {
+  max-width: 600px;
+  margin: 15px auto;
+}
+
+#news-form {
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  padding: 5px 15px;
+}
+
+#news-form i {
+  font-size: 1.5em; 
+}
+
+#news-form .btn {
+  border: 2px solid #9E45EF;
+  border-radius: 3px;
+  color: #9E45EF; 
+}
+#social-container {  
+  margin: 20px auto;
+}
+#social-container i {
+  font-size: 1.5em;
+  margin: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: .3s;
+}
+#social-container i:hover {
+  color: #9E45EF;
+  color: #262626;
+}
+#copy-container {
+  text-align: center;
+  color: #FFF;
+
+}
+
+.secondary-color{
+  color: white;
+  
+}
+
+.uteis{
+color: #FFF;
+}
+
+.p{
+  background-color: black;
+}
+
+body{
+  background-color: black ;
+}
+
+
+
